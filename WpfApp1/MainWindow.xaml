@@ -1,0 +1,41 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Работа со временем" Height="350" Width="525">
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Width="481">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Время 1:" Margin="5"/>
+                <TextBox x:Name="hoursTextBox1" Width="50" Margin="5" Text="12"/>
+                <TextBox x:Name="minutesTextBox1" Width="50" Margin="5" Text="30"/>
+            </StackPanel>
+            <Button Content="Увеличить время 1" Click="IncrementTime1_Click" Margin="5"/>
+            <Button Content="Уменьшить время 1" Click="DowngradeTime1_Click" Margin="5"/>
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Перегрузка int для времени 1" Click="OverloadInt1_Click" Margin="5"/>
+                <TextBlock x:Name="resultOverloadInt1TextBlock" Margin="5"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Перегрузка bool для времени 1" Click="OverloadBool1_Click" Margin="5"/>
+                <TextBlock x:Name="resultOverloadBool1TextBlock" Margin="5"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Время 2:" Margin="5"/>
+                <TextBox x:Name="hoursTextBox2" Width="50" Margin="5" Text="10"/>
+                <TextBox x:Name="minutesTextBox2" Width="50" Margin="5" Text="15"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Вычитание времени" Click="SubtractTime_Click" Margin="5"/>
+                <TextBlock x:Name="resultSubtractTimeTextBlock" Margin="5"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Перегрузка меньше" Click="OverloadLess_Click" Margin="5"/>
+                <TextBlock x:Name="resultOverloadLessTextBlock" Margin="5"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Перегрузка больше" Click="OverloadMore_Click" Margin="5"/>
+                <TextBlock x:Name="resultOverloadMoreTextBlock" Margin="5"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
